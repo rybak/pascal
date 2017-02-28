@@ -11,6 +11,7 @@ var g, x, y, mode : integer;
 	setLineStyle(0, 0, 3);
 	setFillStyle(1, 14);
 	Fillellipse (x, y, 100, 100);
+	writeln('Press enter to exit');
 	readln;
 	closeGraph;
 	end.
