@@ -1,0 +1,6 @@
+# vim files
+*.un~
+
+# fpc compilation outputs
+*.o
+
