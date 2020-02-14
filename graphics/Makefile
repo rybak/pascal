@@ -1,5 +1,13 @@
 PC=fpc $^ -o$@
 
+clean :
+	rm -f kube
+	rm -f linia
+	rm -f smile
+	rm -f q1
+	rm -f q2
+	rm -f q3
+	rm -f q4
 
 linia : linia.pas
 	$(PC)
