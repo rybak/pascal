@@ -44,9 +44,11 @@ begin
 end;
 begin
 	{init}
-	g := detect;
-	fullscreengraph := true;
+	g := D8bit;
+	{ fullscreengraph := true; }
+	mode := m640x480;
 	initGraph (g, mode, '');
+
 	columnHeight := (getMaxY+1) div cubeSize + 1; { +1 to fill the screen on top }
 	columnCount := (getMaxX+1) div cubeSize + 1;  { +1 to fill the screen on the right side }
 	if columnCount > maxColumnCount then

@@ -14,8 +14,9 @@ var
 	ch : char;
 	count : longint;
 begin
-gDriver := detect;
-FullScreenGraph := true;
+{ FullScreenGraph := true; }
+gDriver := D8bit;
+gMode := m640x480;
 initGraph (gDriver, gMode, '');
 
 c := 1;

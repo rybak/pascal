@@ -81,9 +81,10 @@ begin
 	drawMouth(1, frawnStart, frawnEnd);
 end;
 begin
-	gDriver := detect;
-	fullScreenGraph := false;
+	gDriver := D8bit;
+	gMode := m640x480;
 	initGraph (gDriver, gMode, '');
+
 	graphError := graphResult;
 	if (graphError <> grOk) Then
 	begin
@@ -91,8 +92,10 @@ begin
 		writeln(graphError);
 		halt(1)
 	end;
+
 	writeln('mode = ', gMode);
 	writeln('[', getMaxX + 1, '×', getMaxY + 1, ']');
+
 	centerX := (getMaxX+1) div 2;
 	centerY := (getMaxY+1) div 2;
 	msgX := getMaxX div 2 -80;

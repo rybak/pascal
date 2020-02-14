@@ -60,8 +60,9 @@ var
 
 	ch : char;
 begin
-	gDriver := detect;
-	fullScreenGraph := true;
+	gDriver := m640x480;
+	gMode := D4bit;
+	{ fullScreenGraph := true; }
 	initGraph(gDriver, gMode, '');
 	            {%rrrrrGGGGGGbbbbb}
 	colors[0] := %0000000000000000;
