@@ -9,6 +9,8 @@ clean :
 	rm -f q3
 	rm -f q4
 
+all : linia kube smile q1 q2 q3 q4
+
 linia : linia.pas
 	$(PC)
 
