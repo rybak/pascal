@@ -1,10 +1,10 @@
 uses ptcgraph, ptccrt;
 const
 	maxColumnCount = 200;
-	cubeSize = 100;
 	fallDelay = 1;
 	fallDistance = 200;
 var
+	cubeSize: integer;
 	g, mode : integer;
 	i : integer;
 	cubeY, maxY : integer;
@@ -49,6 +49,7 @@ begin
 	mode := m640x480;
 	initGraph (g, mode, '');
 
+	cubeSize := getMaxX div 10;
 	columnHeight := (getMaxY+1) div cubeSize + 1; { +1 to fill the screen on top }
 	columnCount := (getMaxX+1) div cubeSize + 1;  { +1 to fill the screen on the right side }
 	if columnCount > maxColumnCount then
